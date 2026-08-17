@@ -75,6 +75,8 @@ Before installing the integration you need to create an "application" in the Hom
    **Add additional redirect URIs**: Leave unchecked  
    **Enable One Time Token Mode**: Leave unchecked  
    **Sync to China**: Only check if you are located in China
+
+   
 4. Click "Save" then copy the *Client ID* and *Client Secret* and save them for use in the next step.
 
 ## Installing the integration
