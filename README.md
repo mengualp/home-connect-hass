@@ -75,6 +75,12 @@ Before installing the integration you need to create an "application" in the Hom
    **Add additional redirect URIs**: Leave unchecked  
    **Enable One Time Token Mode**: Leave unchecked  
    **Sync to China**: Only check if you are located in China
+
+  Note: In case you have a self-hosted cloud instance of HA (pubic access is not provided by home-assistant.io) you must change the following steps:
+   **Disable "my" default config in HA**: See  https://github.com/tronikos/default_config_disabler and install this integration, disable the "my" part of the default configuration, restart HA
+   **Redirect URI**: https://<your-FQDN-name>[]:<your-SSL-port>]/auth/external/callback
+   As you can see, not only the beginning FQDN part does change, but also the trailing URI part of the redirect URI will change. The reason is simple: The "my" default config redirects you site to my.home-assistant.io unless you disable this "feature"
+   
 4. Click "Save" then copy the *Client ID* and *Client Secret* and save them for use in the next step.
 
 ## Installing the integration
